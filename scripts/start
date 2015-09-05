@@ -1,0 +1,14 @@
+#!/bin/sh
+
+
+_scripts_path=$(dirname $(realpath $0))
+_root_path=$(dirname ${_scripts_path})
+_venv_activate="${_root_path}/.venv/bin/activate"
+
+
+cd "${_root_path}"
+
+if [[ -s "${_venv_activate}" ]]; then
+  source "${_venv_activate}"
+  hovercraft "presentation.rst" -t "template"
+fi
