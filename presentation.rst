@@ -6,20 +6,27 @@
 
 ----
 
-Why Kernel-space?
-=================
+Introduction to Kernel Exploitation
+===================================
+
+----
+
+User-space vs Kernel-space
+==========================
 
 ----
 
 Why Kernel-space?
 =================
 
-* User-space has become harder
-* User-space uses kernel-space / user-space privileges to enforce security
+* User-space has become harder to exploit:
+  * Canaries + ASLR + W^X + Fortify + RELRO + BIND_NOW + BPF_SECCOMP + ...
+  * User-space uses kernel-space / user-space privileges to enforce security
+  * Many protections are provided by the Kernel
+* Kernel is privileged -> More reward :)
 
 ----
 
-:data-x: r800
 :data-y: r800
 :data-scale: 0.1
 
